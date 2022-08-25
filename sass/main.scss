@@ -1,7 +1,24 @@
+@import "./base/common";
+@import "./base/reset";
+
 @import "./layout/about";
 @import "./layout/header";
 @import "./layout/benefits";
-@import "./layout/header";
-@import "./layout/header";
-@import "./layout/header";
-@import "./layout/header";
+@import "./layout/contact-wrap";
+@import "./layout/contacts";
+@import "./layout/footer";
+@import "./layout/gallery";
+@import "./layout/hero";
+@import "./layout/prices";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/portfolio";
+
+@import "./components/btn";
+@import "./components/container";
+@import "./components/modal";
+@import "./components/pre-title";
+@import "./components/title";
+
+@import "./utils/hidden";
+@import "./utils/vars";
