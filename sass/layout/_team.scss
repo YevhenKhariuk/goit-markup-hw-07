@@ -2,79 +2,70 @@
   background-color: var(--seventh-color);
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.team-item {
-  background-color: var(--second-color);
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-}
-
-.team-tittle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--first-color);
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.team-participant {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--first-color);
-  margin-bottom: 10px;
-}
-
-.participiant-soc-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.participiant-soc-icon {
-  fill: var(--soc-icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.participiant-soc-link:hover,
-.participiant-soc-link:focus {
-  background-color: var(--soc-icon-bg-focushover);
-}
-
-.participiant-soc-link:hover .participiant-soc-icon,
-.participiant-soc-link:focus .participiant-soc-icon {
-  fill: var(--soc-icon-color-focushover);
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+  &-item {
+    background-color: var(--second-color);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  &-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &-participant {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--first-color);
+    margin-bottom: 10px;
+  }
+  &-text {
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--fifth-color);
+    margin-bottom: 15px;
+  }
 }
 
 .participiant-soc {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-
-.team-text {
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--fifth-color);
-  margin-bottom: 15px;
+  &-icon {
+    fill: var(--soc-icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .participiant-soc-link:hover &,
+    .participiant-soc-link:focus & {
+      fill: var(--soc-icon-color-focushover);
+    }
+  }
+  &-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--soc-icon-bg-focushover);
+    }
+  }
 }
 
 .container-text-team {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.team-list {
-  display: flex;
-  gap: 30px;
 }

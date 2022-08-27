@@ -1,17 +1,12 @@
-.header-item.current {
-  color: var(--third-color);
-}
-
 .container-header {
   align-items: center;
 }
 
 .page-header {
   border-bottom: 1px solid #ececec;
-}
-
-.page-header > .container-header {
-  display: flex;
+  > .container-header {
+    display: flex;
+  }
 }
 
 .header-list {
@@ -52,10 +47,12 @@
   padding-bottom: 24px;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--third-color);
+  }
 }
 
-.header-logo:hover,
-.header-logo:focus,
 .web {
   color: var(--third-color);
 }
@@ -67,15 +64,10 @@
   letter-spacing: 0.02em;
   color: var(--first-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--third-color);
-}
-
-.list {
-  list-style: none;
+  &:hover,
+  &:focus {
+    color: var(--third-color);
+  }
 }
 
 .current {
@@ -84,17 +76,16 @@
 
 .active {
   position: relative;
-}
-
-.active::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--soc-icon-bg-focushover);
-  bottom: 0;
-  left: 0;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--soc-icon-bg-focushover);
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .header-mailtel {
@@ -106,67 +97,8 @@
   letter-spacing: 0.02em;
   color: var(--fifth-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--third-color);
+  }
 }
-
-.header-mailtel:hover,
-.header-mailtel:focus {
-  color: var(--third-color);
-}
-
-/*---hero---*/
-
-.hero {
-  background-color: var(--sixth-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/img-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-logo {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--second-color);
-  text-align: center;
-  max-width: 696px;
-  margin: auto;
-}
-
-.hero-btn {
-  padding: 10px 32px 10px 32px;
-  margin: 32px auto 0;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  letter-spacing: 0.06em;
-  border: 0;
-  border-radius: 4px;
-  color: var(--second-color);
-  background-color: var(--third-color);
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--hero-button-color);
-  color: var(--second-color);
-}
-
-/*--benefits--*/
