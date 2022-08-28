@@ -1,12 +1,12 @@
-.container-header {
-  align-items: center;
-}
-
 .page-header {
   border-bottom: 1px solid #ececec;
   > .container-header {
     display: flex;
   }
+}
+
+.container-header {
+  align-items: center;
 }
 
 .header-list {

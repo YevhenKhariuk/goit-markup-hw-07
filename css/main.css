@@ -628,8 +628,6 @@ img {
 }
 
 .footer-input-btn {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 200px;
   height: auto;
@@ -894,4 +892,9 @@ img {
   --soc-icon-color: #afb1b8;
   --soc-icon-color-focushover: #ffffff;
   --soc-icon-bg-focushover: #2196f3;
+}
+
+.footer-input-btn {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

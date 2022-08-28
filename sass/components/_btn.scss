@@ -73,17 +73,13 @@
 }
 
 .footer-input-btn {
-  display: flex;
-  align-items: center;
+  @include font(16, 1.87, 700, 0.06);
+  @extend %align-list;
   justify-content: space-between;
   width: 200px;
   height: auto;
   padding-left: 29px;
   padding-right: 28px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   border: 0;
   border-radius: 4px;
   color: var(--second-color);
