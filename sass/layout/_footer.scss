@@ -37,19 +37,21 @@
 
 /*footer soc*/
 
-.footer-soclinks-block {
+.soclinks {
   margin-right: auto;
 }
 
-.footer-soc {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--second-color);
-  margin-bottom: 20px;
-  &-link {
+.soclinks {
+  &__footer-soc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin-bottom: 20px;
+  }
+  &__link {
     width: 44px;
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
@@ -63,14 +65,14 @@
       background-color: var(--soc-icon-bg-focushover);
     }
   }
-  &-icon {
+  &__icon {
     fill: var(--second-color);
     .footer-soc-link:hover &,
     .footer-soc-link:focus & {
       fill: var(--soc-icon-color-focushover);
     }
   }
-  &-list {
+  &__list {
     display: flex;
     gap: 10px;
   }
@@ -79,7 +81,7 @@
 .adress {
   font-style: normal;
   margin-top: 20px;
-  &-link-one {
+  &__link-one {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -90,7 +92,7 @@
       color: var(--third-color);
     }
   }
-  &-link {
+  &__link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -101,7 +103,7 @@
       color: var(--third-color);
     }
   }
-  &-item {
+  &__item {
     margin-top: 9px;
   }
 }
