@@ -1,5 +1,7 @@
 @import "./base/common";
 @import "./base/reset";
+@import "./utils/mixins";
+@import "./utils/placeholder";
 
 @import "./layout/header";
 @import "./layout/benefits";
@@ -16,5 +18,3 @@
 
 @import "./utils/hidden";
 @import "./utils/vars";
-@import "./utils/placeholder";
-@import "./utils/mixins";
