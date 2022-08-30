@@ -1,6 +1,6 @@
 .prices {
   padding-bottom: 94px;
-  &-tittle {
+  &__tittle {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -9,14 +9,14 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  &-list {
+  &__list {
     display: flex;
     gap: 30px;
   }
-  &-item {
+  &__item {
     position: relative;
   }
-  &-top-text {
+  &__top-text {
     display: flex;
     justify-content: center;
     align-items: center;
