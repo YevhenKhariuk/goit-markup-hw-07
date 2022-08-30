@@ -1,4 +1,4 @@
-.features {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -18,15 +18,16 @@
   color: var(--fifth-color);
 }
 
-.portfolio-list {
+.portfolio__nav {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  &-item {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+}
+
+.portfolio__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-item-container {
