@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.portfolio-desc {
+.projects__desc {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -11,7 +11,7 @@
   color: var(--first-color);
 }
 
-.portfolio-text {
+.projects__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -24,18 +24,18 @@
   justify-content: center;
 }
 
-.portfolio__list-item {
+.projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-item-container {
+.projects__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
-.portfolio-link {
+.projects__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -44,12 +44,12 @@
   }
 }
 
-.portfolio-top-wrap {
+.projects__logo {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-top-text {
+.projects__top-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,8 +63,8 @@
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
-  .portfolio-link:hover &,
-  .portfolio-link:focus & {
+  .projects__link:hover &,
+  .projects__link:focus & {
     transform: translateY(0%);
   }
 }
